@@ -151,6 +151,7 @@ header nav>a:hover {
 .middle-content div:nth-child(2) {
     padding-bottom: 20px;
     border-bottom: 1px dotted black;
+    width: 800px;
 }
 
 .middle-content.about-page div:nth-child(1n+3) {
