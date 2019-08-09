@@ -96,7 +96,19 @@ header nav>a {
     text-decoration: none;
     color: black;
     font-size: 0.75em;
+    padding: 10px;
 }
+
+header nav>a:hover {
+    /* border: 1px solid red; */
+    animation-name: test-animation;
+    animation-duration: 2s;
+}
+
+@keyframes test-animation {
+    from {background-color: white; color: black;border-bottom: 0.75px solid gray;}
+    to {background-color: gray; color: white;}
+  }
 
 .top-content {
     display: flex;
