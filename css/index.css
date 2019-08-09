@@ -75,24 +75,29 @@ header {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* padding: 10px 0 0 0; */
 }
 
 header .logo {
-    max-width: 200px;
+    width: 150px;
     border: 1px solid red;
+    padding-bottom: 10px;
 }
 
 header nav {
-    max-width: 600px;
+    width: 650px;
     border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header nav>a {
-    max-width: 80px;
-    padding: 0 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.75em;
 }
 
 .top-content {
