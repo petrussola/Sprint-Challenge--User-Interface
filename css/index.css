@@ -118,24 +118,52 @@ header nav>a {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-
+    /* border-bottom: 1px dashed black; */
 }
 
 .middle-content.about-page {
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid red;
 }
 
-.middle-content.about-page div:nth-child(3) {width: 390px;}
-.middle-content.about-page div:nth-child(4) {width: 390px;}
-.middle-content.about-page div:nth-child(5) {width: 390px;}
-.middle-content.about-page div:nth-child(6) {width: 390px;}
+.middle-content.about-page>div {
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle-content div:nth-child(1) {
+    padding: 0;
+}
+
+.middle-content div:nth-child(2) {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted black;
+}
+
+.middle-content.about-page div:nth-child(1n+3) {
+    padding-top: 40px;
+    height: 450px;
+    width: 390px;
+    margin: 5px;
+    border-bottom: 1px dotted black;
+}
+
+.middle-content.about-page div:last-child {
+    height: 100%;
+    width: 800px;
+}
 
 .middle-content h2 {
-    padding: 0 2%;
     margin-bottom: 0;
+}
+
+.middle-content.about-page div p:nth-child(4) {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .middle-content .boxes {
