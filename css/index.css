@@ -118,7 +118,6 @@ header nav>a {
 
 .middle-content {
     margin-bottom: 20px;
-    /* border-bottom: 1px dashed black; */
 }
 
 .middle-content.about-page {
@@ -150,11 +149,6 @@ header nav>a {
     border-bottom: 1px dotted black;
 }
 
-.middle-content.about-page div:last-child {
-    height: 100%;
-    width: 800px;
-}
-
 .middle-content h2 {
     margin-bottom: 0;
 }
@@ -164,6 +158,14 @@ header nav>a {
     width: 100px;
     text-align: center;
     border-radius: 5px;
+}
+
+.middle-content.about-page div:last-child {
+    height: 150px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .middle-content .boxes {
