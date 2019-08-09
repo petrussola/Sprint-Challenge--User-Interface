@@ -76,8 +76,9 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    /* height: 100px; */
     /* padding: 10px 0 0 0; */
+    padding: 20px 0;
 }
 
 header .logo {
@@ -104,6 +105,17 @@ header nav>a:hover {
     animation-name: test-animation;
     animation-duration: 2s;
 }
+
+/* tried media query but doesn't work, need to explore further */
+
+@media only screen (max-width: 700px){
+    header nav {
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+}
+
+/* tried media query but doesn't work, need to explore further */
 
 @keyframes test-animation {
     from {background-color: white; color: black;border-bottom: 0.75px solid gray;}
