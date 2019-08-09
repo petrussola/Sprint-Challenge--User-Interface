@@ -119,7 +119,19 @@ header nav>a {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
 }
+
+.middle-content.about-page {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid red;
+}
+
+.middle-content.about-page div:nth-child(3) {width: 390px;}
+.middle-content.about-page div:nth-child(4) {width: 390px;}
+.middle-content.about-page div:nth-child(5) {width: 390px;}
+.middle-content.about-page div:nth-child(6) {width: 390px;}
 
 .middle-content h2 {
     padding: 0 2%;
