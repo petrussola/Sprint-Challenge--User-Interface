@@ -82,13 +82,11 @@ header {
 
 header .logo {
     width: 150px;
-    border: 1px solid red;
     padding-bottom: 10px;
 }
 
 header nav {
     width: 650px;
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -106,6 +104,10 @@ header nav>a {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content div:nth-child(2), .top-content div:nth-child(3) {
+    padding-top: 20px;
 }
 
 .top-content .text-container {
