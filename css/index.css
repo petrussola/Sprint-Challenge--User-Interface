@@ -143,7 +143,7 @@ header nav>a {
 
 .middle-content.about-page div:nth-child(1n+3) {
     padding-top: 40px;
-    height: 450px;
+    /* height: 450px; */
     width: 390px;
     margin: 5px;
     border-bottom: 1px dotted black;
@@ -151,6 +151,11 @@ header nav>a {
 
 .middle-content h2 {
     margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.middle-content p {
+    padding: 20px 0;
 }
 
 .middle-content.about-page div p:nth-child(4) {
@@ -162,7 +167,7 @@ header nav>a {
 }
 
 .middle-content.about-page div:last-child {
-    height: 150px;
+    /* height: 150px; */
     width: 800px;
     display: flex;
     flex-direction: column;
