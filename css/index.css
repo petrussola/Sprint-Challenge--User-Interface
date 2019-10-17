@@ -67,9 +67,60 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
+
+header {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100px; */
+    /* padding: 10px 0 0 0; */
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+header nav {
+    width: 650px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header nav>a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75em;
+    padding: 10px;
+}
+
+header nav>a:hover {
+    /* border: 1px solid red; */
+    animation-name: test-animation;
+    animation-duration: 2s;
+}
+
+/* tried media query but doesn't work, need to explore further */
+
+@media only screen (max-width: 700px){
+    header nav {
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+}
+
+/* tried media query but doesn't work, need to explore further */
+
+@keyframes test-animation {
+    from {background-color: white; color: black;border-bottom: 0.75px solid gray;}
+    to {background-color: gray; color: white;}
+  }
 
 .top-content {
     display: flex;
@@ -77,6 +128,10 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content div:nth-child(2), .top-content div:nth-child(3) {
+    padding-top: 20px;
 }
 
 .top-content .text-container {
@@ -87,12 +142,61 @@ p {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+}
+
+.middle-content.about-page {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.middle-content.about-page>div {
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle-content div:nth-child(1) {
+    padding: 0;
+}
+
+.middle-content div:nth-child(2) {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted black;
+    width: 800px;
+}
+
+.middle-content.about-page div:nth-child(1n+3) {
+    padding-top: 40px;
+    /* height: 450px; */
+    width: 390px;
+    margin: 5px;
+    border-bottom: 1px dotted black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
     margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.middle-content p {
+    padding: 20px 0;
+}
+
+.middle-content.about-page div p:nth-child(4) {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.middle-content.about-page div:last-child {
+    /* height: 150px; */
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .middle-content .boxes {
@@ -111,6 +215,17 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes div:nth-child(1) { background: teal;}
+.middle-content .boxes div:nth-child(2) { background: gold;}
+.middle-content .boxes div:nth-child(3) { background: cadetblue;}
+.middle-content .boxes div:nth-child(4) { background: coral;}
+.middle-content .boxes div:nth-child(5) { background: crimson;}
+.middle-content .boxes div:nth-child(6) { background: forestgreen;}
+.middle-content .boxes div:nth-child(7) { background: darkorchid;}
+.middle-content .boxes div:nth-child(8) { background: hotpink;}
+.middle-content .boxes div:nth-child(9) { background: indigo;}
+.middle-content .boxes div:nth-child(10) { background: dodgerblue;}
 
 .bottom-content {
     display: flex;
